@@ -11,6 +11,11 @@ close all;
                                      %keep the audio file in same folder.
                                      % audio.format example Steve.mp3 or
                                      % steve.wav
+
+									 
+% % select particular range of the audio %uncomment the following two lines
+% samples = [2*fs,4*fs]; %from 2nd second to 4th second %change as per requirement
+% [x, fs] = audioread('audio.format',samples);
                                      
 wc  = 1000;                       %cut-off frequency
 LowBand = 5000;                   %Low cut off of bandpass
